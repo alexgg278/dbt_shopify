@@ -9,6 +9,8 @@ models:
     intermediate:
       +materialized: ephemeral
 vars:
+  shopify_database: brushboo
+  shopify_schema: shopify
   shopify:
     shopify_customer: "{{ ref('stg_shopify__customer') }}"
     shopify_order: "{{ ref('stg_shopify__order') }}"
